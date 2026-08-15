@@ -1,0 +1,13 @@
+<suite name="AutomationSuite">
+    <test name="LoginAndCartTests">
+        <groups>
+            <run>
+                <include name="Login"/>
+            </run>
+        </groups>
+        <classes>
+            <class name="LoginTest"/>
+            <class name="AddToCartTest"/>
+        </classes>
+    </test>
+</suite>
