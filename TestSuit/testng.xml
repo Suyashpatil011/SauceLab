@@ -10,6 +10,7 @@
             <class name="AddToCartTest"/>
             <class name="CheckoutTest"/>
             <class name ="PaymnetTest"/>
+            <class name = "LogoutTest"/>
         </classes>
     </test>
 </suite>
