@@ -1,0 +1,28 @@
+import Base.Base;
+import POM.Checkout;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
+public class CheckoutTest extends Base {
+    private Checkout ck;
+
+    @BeforeMethod(alwaysRun = true)
+    public void initPageObject() {
+        ck = new Checkout(driver);
+    }
+
+
+    @Test(groups = "Login")
+
+    public void testCheckoutbtn() {
+        ck.clickOncheckoutbtn();
+    }
+
+    @Test(groups = "Login")
+
+    public void testProcessbtn() {
+        ck.clickOncheckoutbtn();
+    }
+
+}
+
