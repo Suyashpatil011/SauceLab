@@ -8,6 +8,8 @@
         <classes>
             <class name="LoginTest"/>
             <class name="AddToCartTest"/>
+            <class name="CheckoutTest"/>
+            <class name ="PaymnetTest"/>
         </classes>
     </test>
 </suite>

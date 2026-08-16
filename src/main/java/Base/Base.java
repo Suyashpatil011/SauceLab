@@ -12,7 +12,7 @@ public class Base {
     protected static WebDriver driver;
 
     @BeforeSuite(alwaysRun = true)
-    public void setup(){
+    public void setup() {
         driver = new ChromeDriver();
         log.info("Intializing driver");
         driver.manage().window().maximize();
@@ -20,10 +20,12 @@ public class Base {
         driver.get("https://automationexercise.com/login");
 
     }
-      /*@AfterSuite(alwaysRun = true)
-    public void teardown(){
-        log.info("Tearing down driver");
-        driver.quit();*/
 
+    @AfterSuite(alwaysRun = true)
+    public void teardown() {
+        log.info("Tearing down driver");
+        driver.quit();
+
+    }
 }
 

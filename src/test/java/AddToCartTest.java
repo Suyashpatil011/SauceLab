@@ -17,7 +17,7 @@ public class AddToCartTest extends Base {
     @Test(groups = "Login")
     public void testAddToCart() {
         log.info("adding product test...");
-        at.hoveronAddToCart("Blue Top");
+        at.hoveronAddToCart("Winter Top");
         log.info("Product added successfully...");
         at.clickonAddToCart();
         log.info("Navigated to checkout flow..");
