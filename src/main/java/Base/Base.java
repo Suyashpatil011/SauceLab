@@ -3,6 +3,7 @@ package Base;
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 import org.testng.annotations.*;
 import org.apache.logging.log4j.Logger;
 
@@ -13,7 +14,11 @@ public class Base {
 
     @BeforeSuite(alwaysRun = true)
     public void setup() {
-        driver = new ChromeDriver();
+        ChromeOptions options = new ChromeOptions();
+        options.addArguments("--disable-popup-blocking");
+        options.addArguments("--blink-settings=imagesEnabled=false"); // optional
+        options.addArguments("--disable-extensions");
+        driver = new ChromeDriver(options);
         log.info("Intializing driver");
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
