@@ -1,3 +1,5 @@
+package Test;
+
 import Base.Base;
 import POM.Checkout;
 import org.testng.annotations.BeforeMethod;
@@ -8,18 +10,16 @@ public class CheckoutTest extends Base {
 
     @BeforeMethod(alwaysRun = true)
     public void initPageObject() {
-        ck = new Checkout(driver);
+        ck = pom.getCheckout();
     }
 
 
-    @Test(groups = "Login")
-
+    @Test(groups = {"Checkout", "sanity"}, dependsOnGroups = "AddToCart")
     public void testCheckoutbtn() {
         ck.clickOncheckoutbtn();
     }
 
-    @Test(groups = "Login")
-
+    @Test(groups = {"Checkout", "sanity"}, dependsOnMethods = "testCheckoutbtn")
     public void testProcessbtn() {
         ck.clickOncheckoutbtn();
     }

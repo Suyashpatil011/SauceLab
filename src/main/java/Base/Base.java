@@ -1,5 +1,6 @@
 package Base;
 
+import Manager.PageObjectManager;
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -10,6 +11,7 @@ public class Base {
 
     protected static final Logger log = LogManager.getLogger(Base.class);
     protected static WebDriver driver;
+    protected static PageObjectManager pom;
 
     @BeforeSuite(alwaysRun = true)
     public void setup() {
@@ -18,6 +20,7 @@ public class Base {
         driver.manage().window().maximize();
         driver.manage().deleteAllCookies();
         driver.get("https://automationexercise.com/login");
+        pom = new PageObjectManager(driver);
 
     }
 
@@ -26,6 +29,10 @@ public class Base {
         log.info("Tearing down driver");
         driver.quit();
 
+    }
+
+    public static WebDriver getDriver() {
+        return driver;
     }
 }
 

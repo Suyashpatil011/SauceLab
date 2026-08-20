@@ -1,16 +1,16 @@
 <suite name="AutomationSuite">
+    <listeners>
+        <listener class-name="Listener.TestListener"/>
+    </listeners>
     <test name="LoginAndCartTests">
         <groups>
             <run>
-                <include name="Login"/>
+                <!-- Order is enforced via dependsOnGroups on each @Test, not by listing classes here. -->
+                <include name="sanity"/>
             </run>
         </groups>
-        <classes>
-            <class name="LoginTest"/>
-            <class name="AddToCartTest"/>
-            <class name="CheckoutTest"/>
-            <class name ="PaymnetTest"/>
-            <class name = "LogoutTest"/>
-        </classes>
+        <packages>
+            <package name="Test"/>
+        </packages>
     </test>
 </suite>

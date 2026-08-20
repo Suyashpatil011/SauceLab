@@ -45,8 +45,21 @@ public class AddToCart {
     }
 
     public void clickonAddToCart() {
-        By cartlink = By.xpath("//a[@href='/view_cart']");
-        WebElement popupElement = wait.waitForVisibility(cartlink);
-        popupElement.click();
+        // Scoped to the "Added!" modal - the unscoped xpath also matches the (hidden) header cart link
+        By cartlink = By.xpath("//div[@id='cartModal']//a[@href='/view_cart']");
+        WebElement popupElement = wait.waitForClickable(cartlink);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", popupElement);
+    }
+
+    private By cartProductName(String productName) {
+        return By.xpath("//td[@class='cart_description']//a[contains(text(),'" + productName + "')]");
+    }
+
+    public boolean isProductInCart(String productName) {
+        try {
+            return wait.waitForVisibility(cartProductName(productName)).isDisplayed();
+        } catch (TimeoutException e) {
+            return false;
+        }
     }
 }
