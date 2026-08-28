@@ -1,6 +1,7 @@
 package Base;
 
 import Manager.PageObjectManager;
+import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -16,6 +17,7 @@ public class Base {
 
     @BeforeSuite(alwaysRun = true)
     public void setup() {
+        WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-popup-blocking");
         options.addArguments("--blink-settings=imagesEnabled=false"); // optional
