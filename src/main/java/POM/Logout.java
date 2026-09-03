@@ -10,7 +10,7 @@ public class Logout {
     private WaitUtils wait;
     private By logoutBtn = By.xpath("//a[@href='/logout']");
 
-    public Logout(WebDriver driver) {
+    public Logout(WebDriver driver, WaitUtils waitUtils) {
         this.driver = driver;
         this.wait = new WaitUtils(driver, 10);
 

@@ -32,3 +32,213 @@
 2026-08-28 18:16 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
 2026-08-28 18:16 INFO  Base.Base - E2E Testing Completed..!!
 2026-08-28 18:16 INFO  Base.Base - Tearing down driver
+2026-08-31 18:27 INFO  Base.Base - Intializing driver
+2026-08-31 18:27 INFO  Base.Base - Starting login test...
+2026-08-31 18:27 INFO  Base.Base - Enter password test...
+2026-08-31 18:27 INFO  Base.Base - Click login button...
+2026-08-31 18:27 INFO  Base.Base - Login test complete
+2026-08-31 18:27 INFO  Base.Base - adding product test...
+2026-08-31 18:27 INFO  Base.Base - Product added successfully...
+2026-08-31 18:27 INFO  Base.Base - Navigated to checkout flow..
+2026-08-31 18:27 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
+2026-08-31 18:27 INFO  Base.Base - Tearing down driver
+2026-08-31 18:45 INFO  Base.Base - Intializing driver
+2026-08-31 18:46 INFO  Base.Base - Tearing down driver
+2026-08-31 18:54 INFO  Base.Base - Intializing driver
+2026-08-31 18:54 INFO  Base.Base - Tearing down driver
+2026-08-31 18:57 INFO  Base.Base - Intializing driver
+2026-08-31 18:58 INFO  Base.Base - Tearing down driver
+2026-08-31 19:18 INFO  Base.Base - Intializing driver
+2026-08-31 19:18 INFO  Base.Base - Tearing down driver
+2026-08-31 19:20 INFO  Base.Base - Intializing driver
+2026-08-31 19:20 INFO  Base.Base - Starting invalid login test...
+2026-08-31 19:20 INFO  Base.Base - Entered invalid email
+2026-08-31 19:20 INFO  Base.Base - Entered invalid password
+2026-08-31 19:21 INFO  Base.Base - Clicked login button
+2026-08-31 19:21 ERROR Base.Base - Captured error message: Your email or password is incorrect!
+2026-08-31 19:21 INFO  Base.Base - Invalid login test completed successfully
+2026-08-31 19:21 INFO  Base.Base - Starting valid login test...
+2026-08-31 19:21 INFO  Base.Base - Entered email
+2026-08-31 19:21 INFO  Base.Base - Entered password
+2026-08-31 19:21 INFO  Base.Base - Clicked login button
+2026-08-31 19:21 INFO  Base.Base - Valid login test completed successfully
+2026-08-31 19:21 INFO  Base.Base - adding product test...
+2026-08-31 19:21 INFO  Base.Base - Product added successfully...
+2026-08-31 19:21 INFO  Base.Base - Navigated to checkout flow..
+2026-08-31 19:21 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
+2026-08-31 19:21 INFO  Base.Base - Tearing down driver
+2026-08-31 19:24 INFO  Base.Base - Intializing driver
+2026-08-31 19:24 INFO  Base.Base - Starting invalid login test...
+2026-08-31 19:24 INFO  Base.Base - Entered invalid email
+2026-08-31 19:24 INFO  Base.Base - Entered invalid password
+2026-08-31 19:24 INFO  Base.Base - Clicked login button
+2026-08-31 19:24 ERROR Base.Base - Captured error message: Your email or password is incorrect!
+2026-08-31 19:24 INFO  Base.Base - Invalid login test completed successfully
+2026-08-31 19:24 INFO  Base.Base - Starting valid login test...
+2026-08-31 19:24 INFO  Base.Base - Entered email
+2026-08-31 19:24 INFO  Base.Base - Entered password
+2026-08-31 19:24 INFO  Base.Base - Clicked login button
+2026-08-31 19:24 INFO  Base.Base - Valid login test completed successfully
+2026-08-31 19:25 INFO  Base.Base - adding product test...
+2026-08-31 19:25 INFO  Base.Base - Product added successfully...
+2026-08-31 19:25 INFO  Base.Base - Navigated to checkout flow..
+2026-08-31 19:25 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
+2026-08-31 19:25 INFO  Base.Base - Tearing down driver
+2026-08-31 19:31 INFO  Base.Base - Intializing driver
+2026-08-31 19:31 INFO  Base.Base - Starting invalid login test...
+2026-08-31 19:31 INFO  Base.Base - Entered invalid email
+2026-08-31 19:31 INFO  Base.Base - Entered invalid password
+2026-08-31 19:31 INFO  Base.Base - Clicked login button
+2026-08-31 19:31 ERROR Base.Base - Captured error message: Your email or password is incorrect!
+2026-08-31 19:31 INFO  Base.Base - Invalid login test completed successfully
+2026-08-31 19:31 INFO  Base.Base - Starting valid login test...
+2026-08-31 19:31 INFO  Base.Base - Entered email
+2026-08-31 19:31 INFO  Base.Base - Entered password
+2026-08-31 19:31 INFO  Base.Base - Clicked login button
+2026-08-31 19:31 INFO  Base.Base - Valid login test completed successfully
+2026-08-31 19:31 INFO  Base.Base - adding product test...
+2026-08-31 19:31 INFO  Base.Base - Product added successfully...
+2026-08-31 19:31 INFO  Base.Base - Navigated to checkout flow..
+2026-08-31 19:31 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
+2026-08-31 19:31 INFO  Base.Base - Tearing down driver
+2026-08-31 19:33 INFO  Base.Base - Intializing driver
+2026-08-31 19:33 INFO  Base.Base - Starting invalid login test...
+2026-08-31 19:33 INFO  Base.Base - Entered invalid email
+2026-08-31 19:33 INFO  Base.Base - Entered invalid password
+2026-08-31 19:33 INFO  Base.Base - Clicked login button
+2026-08-31 19:33 ERROR Base.Base - Captured error message: Your email or password is incorrect!
+2026-08-31 19:33 INFO  Base.Base - Invalid login test completed successfully
+2026-08-31 19:33 INFO  Base.Base - Starting valid login test...
+2026-08-31 19:33 INFO  Base.Base - Entered email
+2026-08-31 19:33 INFO  Base.Base - Entered password
+2026-08-31 19:33 INFO  Base.Base - Clicked login button
+2026-08-31 19:33 INFO  Base.Base - Valid login test completed successfully
+2026-08-31 19:33 INFO  Base.Base - adding product test...
+2026-08-31 19:33 INFO  Base.Base - Product added successfully...
+2026-08-31 19:33 INFO  Base.Base - Navigated to checkout flow..
+2026-08-31 19:33 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
+2026-08-31 19:33 INFO  Base.Base - Tearing down driver
+2026-08-31 19:34 INFO  Base.Base - Intializing driver
+2026-08-31 19:35 INFO  Base.Base - Starting invalid login test...
+2026-08-31 19:35 INFO  Base.Base - Entered invalid email
+2026-08-31 19:35 INFO  Base.Base - Entered invalid password
+2026-08-31 19:35 INFO  Base.Base - Clicked login button
+2026-08-31 19:35 ERROR Base.Base - Captured error message: Your email or password is incorrect!
+2026-08-31 19:35 INFO  Base.Base - Invalid login test completed successfully
+2026-08-31 19:35 INFO  Base.Base - Starting valid login test...
+2026-08-31 19:35 INFO  Base.Base - Entered email
+2026-08-31 19:35 INFO  Base.Base - Entered password
+2026-08-31 19:35 INFO  Base.Base - Clicked login button
+2026-08-31 19:35 INFO  Base.Base - Valid login test completed successfully
+2026-08-31 19:35 INFO  Base.Base - adding product test...
+2026-08-31 19:35 INFO  Base.Base - Product added successfully...
+2026-08-31 19:35 INFO  Base.Base - Navigated to checkout flow..
+2026-08-31 19:35 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
+2026-08-31 19:36 INFO  Base.Base - Tearing down driver
+2026-09-03 18:24 INFO  Base.Base - Intializing driver
+2026-09-03 18:24 INFO  Base.Base - Starting invalid login test...
+2026-09-03 18:24 INFO  Base.Base - Entered invalid email
+2026-09-03 18:24 INFO  Base.Base - Entered invalid password
+2026-09-03 18:24 INFO  Base.Base - Clicked login button
+2026-09-03 18:24 ERROR Base.Base - Captured error message: Your email or password is incorrect!
+2026-09-03 18:24 INFO  Base.Base - Invalid login test completed successfully
+2026-09-03 18:24 INFO  Base.Base - Starting valid login test...
+2026-09-03 18:24 INFO  Base.Base - Entered email
+2026-09-03 18:24 INFO  Base.Base - Entered password
+2026-09-03 18:24 INFO  Base.Base - Clicked login button
+2026-09-03 18:24 INFO  Base.Base - Valid login test completed successfully
+2026-09-03 18:24 INFO  Base.Base - adding product test...
+2026-09-03 18:24 INFO  Base.Base - Product added successfully...
+2026-09-03 18:25 INFO  Base.Base - Navigated to checkout flow..
+2026-09-03 18:25 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
+2026-09-03 18:25 INFO  Base.Base - Tearing down driver
+2026-09-03 18:26 INFO  Base.Base - Intializing driver
+2026-09-03 18:26 INFO  Base.Base - Starting invalid login test...
+2026-09-03 18:26 INFO  Base.Base - Entered invalid email
+2026-09-03 18:26 INFO  Base.Base - Entered invalid password
+2026-09-03 18:26 INFO  Base.Base - Clicked login button
+2026-09-03 18:26 ERROR Base.Base - Captured error message: Your email or password is incorrect!
+2026-09-03 18:26 INFO  Base.Base - Invalid login test completed successfully
+2026-09-03 18:26 INFO  Base.Base - Starting valid login test...
+2026-09-03 18:26 INFO  Base.Base - Entered email
+2026-09-03 18:26 INFO  Base.Base - Entered password
+2026-09-03 18:26 INFO  Base.Base - Clicked login button
+2026-09-03 18:26 INFO  Base.Base - Valid login test completed successfully
+2026-09-03 18:26 INFO  Base.Base - adding product test...
+2026-09-03 18:26 INFO  Base.Base - Product added successfully...
+2026-09-03 18:26 INFO  Base.Base - Navigated to checkout flow..
+2026-09-03 18:26 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
+2026-09-03 18:26 INFO  Base.Base - E2E Testing Completed..!!
+2026-09-03 18:26 INFO  Base.Base - Tearing down driver
+2026-09-03 19:01 INFO  Base.Base - Intializing driver
+2026-09-03 19:01 INFO  Base.Base - Tearing down driver
+2026-09-03 19:04 INFO  Base.Base - Intializing driver
+2026-09-03 19:05 INFO  Base.Base - Starting invalid login test...
+2026-09-03 19:05 INFO  Base.Base - Entered invalid email
+2026-09-03 19:05 INFO  Base.Base - Entered invalid password
+2026-09-03 19:05 INFO  Base.Base - Clicked login button
+2026-09-03 19:05 ERROR Base.Base - Captured error message: Your email or password is incorrect!
+2026-09-03 19:05 INFO  Base.Base - Invalid login test completed successfully
+2026-09-03 19:05 INFO  Base.Base - Starting valid login test...
+2026-09-03 19:05 INFO  Base.Base - Entered email
+2026-09-03 19:05 INFO  Base.Base - Entered password
+2026-09-03 19:05 INFO  Base.Base - Clicked login button
+2026-09-03 19:05 INFO  Base.Base - Valid login test completed successfully
+2026-09-03 19:05 INFO  Base.Base - adding product test...
+2026-09-03 19:05 INFO  Base.Base - Product added successfully...
+2026-09-03 19:05 INFO  Base.Base - Navigated to checkout flow..
+2026-09-03 19:05 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
+2026-09-03 19:06 INFO  Base.Base - Intializing driver
+2026-09-03 19:06 INFO  Base.Base - Starting invalid login test...
+2026-09-03 19:06 INFO  Base.Base - Entered invalid email
+2026-09-03 19:06 INFO  Base.Base - Entered invalid password
+2026-09-03 19:06 INFO  Base.Base - Clicked login button
+2026-09-03 19:06 ERROR Base.Base - Captured error message: Your email or password is incorrect!
+2026-09-03 19:06 INFO  Base.Base - Invalid login test completed successfully
+2026-09-03 19:06 INFO  Base.Base - Starting valid login test...
+2026-09-03 19:06 INFO  Base.Base - Entered email
+2026-09-03 19:06 INFO  Base.Base - Entered password
+2026-09-03 19:06 INFO  Base.Base - Clicked login button
+2026-09-03 19:06 INFO  Base.Base - Valid login test completed successfully
+2026-09-03 19:06 INFO  Base.Base - adding product test...
+2026-09-03 19:06 INFO  Base.Base - Product added successfully...
+2026-09-03 19:06 INFO  Base.Base - Navigated to checkout flow..
+2026-09-03 19:06 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
+2026-09-03 19:07 INFO  Base.Base - E2E Testing Completed..!!
+2026-09-03 19:07 INFO  Base.Base - Tearing down driver
+2026-09-03 19:22 INFO  Base.Base - Intializing driver
+2026-09-03 19:22 INFO  Base.Base - Starting invalid login test...
+2026-09-03 19:22 INFO  Base.Base - Entered invalid email
+2026-09-03 19:22 INFO  Base.Base - Entered invalid password
+2026-09-03 19:22 INFO  Base.Base - Clicked login button
+2026-09-03 19:22 ERROR Base.Base - Captured error message: Your email or password is incorrect!
+2026-09-03 19:22 INFO  Base.Base - Invalid login test completed successfully
+2026-09-03 19:22 INFO  Base.Base - Starting valid login test...
+2026-09-03 19:22 INFO  Base.Base - Entered email
+2026-09-03 19:22 INFO  Base.Base - Entered password
+2026-09-03 19:24 INFO  Base.Base - Clicked login button
+2026-09-03 19:24 INFO  Base.Base - Valid login test completed successfully
+2026-09-03 19:24 INFO  Base.Base - adding product test...
+2026-09-03 19:24 INFO  Base.Base - Product added successfully...
+2026-09-03 19:24 INFO  Base.Base - Navigated to checkout flow..
+2026-09-03 19:24 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
+2026-09-03 19:24 INFO  Base.Base - E2E Testing Completed..!!
+2026-09-03 19:24 INFO  Base.Base - Tearing down driver
+2026-09-03 19:26 INFO  Base.Base - Intializing driver
+2026-09-03 19:26 INFO  Base.Base - Starting invalid login test...
+2026-09-03 19:26 INFO  Base.Base - Entered invalid email
+2026-09-03 19:26 INFO  Base.Base - Entered invalid password
+2026-09-03 19:26 INFO  Base.Base - Clicked login button
+2026-09-03 19:26 ERROR Base.Base - Captured error message: Your email or password is incorrect!
+2026-09-03 19:26 INFO  Base.Base - Invalid login test completed successfully
+2026-09-03 19:26 INFO  Base.Base - Starting valid login test...
+2026-09-03 19:26 INFO  Base.Base - Entered email
+2026-09-03 19:26 INFO  Base.Base - Entered password
+2026-09-03 19:26 INFO  Base.Base - Clicked login button
+2026-09-03 19:26 INFO  Base.Base - Valid login test completed successfully
+2026-09-03 19:27 INFO  Base.Base - adding product test...
+2026-09-03 19:27 INFO  Base.Base - Product added successfully...
+2026-09-03 19:27 INFO  Base.Base - Navigated to checkout flow..
+2026-09-03 19:27 INFO  Base.Base - Verified added product 'Winter Top' is present in the cart
+2026-09-03 19:27 INFO  Base.Base - E2E Testing Completed..!!
+2026-09-03 19:27 INFO  Base.Base - Tearing down driver

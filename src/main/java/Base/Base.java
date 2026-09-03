@@ -1,6 +1,7 @@
 package Base;
 
 import Manager.PageObjectManager;
+import Utils.WaitUtils;
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
 import org.openqa.selenium.WebDriver;
@@ -14,13 +15,13 @@ public class Base {
     protected static final Logger log = LogManager.getLogger(Base.class);
     protected static WebDriver driver;
     protected static PageObjectManager pom;
+    protected static WaitUtils waitUtils;   // global instance
 
     @BeforeSuite(alwaysRun = true)
     public void setup() {
         WebDriverManager.chromedriver().setup();
         ChromeOptions options = new ChromeOptions();
         options.addArguments("--disable-popup-blocking");
-        options.addArguments("--blink-settings=imagesEnabled=false"); // optional
         options.addArguments("--disable-extensions");
         driver = new ChromeDriver(options);
         log.info("Intializing driver");
@@ -28,6 +29,11 @@ public class Base {
         driver.manage().deleteAllCookies();
         driver.get("https://automationexercise.com/login");
         pom = new PageObjectManager(driver);
+        waitUtils = new WaitUtils(driver, 15); // create once globally
+        waitUtils.waitForPageAndImages();
+
+
+
 
     }
 

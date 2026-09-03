@@ -1,10 +1,7 @@
 package Utils;
 
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.ui.ExpectedConditions;
-import org.openqa.selenium.support.ui.WebDriverWait;
+import org.openqa.selenium.*;
+import org.openqa.selenium.support.ui.*;
 
 import java.time.Duration;
 
@@ -18,24 +15,41 @@ public class WaitUtils {
         this.wait = new WebDriverWait(driver, Duration.ofSeconds(timeoutInSeconds));
     }
 
-    public WebElement waitForVisibility  (By locator) {
+    // ✅ Wait until page is fully loaded
+    public void waitForPageLoad() {
+        wait.until(webDriver ->
+                ((JavascriptExecutor) webDriver)
+                        .executeScript("return document.readyState").equals("complete"));
+    }
+
+    // ✅ Wait until all images are loaded
+    public void waitForImagesToLoad() {
+        wait.until(webDriver -> (Boolean) ((JavascriptExecutor) webDriver)
+                .executeScript(
+                        "return Array.from(document.images).every(img => img.complete && img.naturalWidth > 0)"
+                ));
+    }
+
+    // ✅ Common method for page + images
+    public void waitForPageAndImages() {
+        waitForPageLoad();
+        waitForImagesToLoad();
+    }
+
+    // Existing methods
+    public WebElement waitForVisibility(By locator) {
         return wait.until(ExpectedConditions.visibilityOfElementLocated(locator));
     }
 
-    // Wait until element is clickable
     public WebElement waitForClickable(By locator) {
         return wait.until(ExpectedConditions.elementToBeClickable(locator));
     }
 
-    // Wait until element is present in DOM
     public WebElement waitForPresence(By locator) {
         return wait.until(ExpectedConditions.presenceOfElementLocated(locator));
     }
 
-    // Wait until text is present in element
     public boolean waitForText(By locator, String text) {
         return wait.until(ExpectedConditions.textToBePresentInElementLocated(locator, text));
     }
 }
-
-

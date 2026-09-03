@@ -17,7 +17,7 @@ public class Payment {
     private By submitBtn = By.id("submit");
     private By finalmsg = By.cssSelector("h2[class='title text-center'] b");
 
-    public Payment(WebDriver driver) {
+    public Payment(WebDriver driver, WaitUtils waitUtils) {
         this.driver = driver;
         this.wait = new WaitUtils(driver, 20);
     }

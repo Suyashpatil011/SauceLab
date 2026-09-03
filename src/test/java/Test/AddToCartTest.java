@@ -21,7 +21,7 @@ public class AddToCartTest extends Base {
         }
     }
 
-    @Test(groups = {"AddToCart", "sanity"}, dependsOnGroups = "Login")
+    @Test(groups = {"AddToCart", "sanity"}, dependsOnMethods = "verifyFooterSubscription")
     public void testAddToCart() {
         log.info("adding product test...");
         at.hoveronAddToCart("Winter Top");

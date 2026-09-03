@@ -9,7 +9,7 @@ public class AddToCart {
     private WebDriver driver;
     private WaitUtils wait;
 
-    public AddToCart(WebDriver driver) {
+    public AddToCart(WebDriver driver, WaitUtils waitUtils) {
         this.driver = driver;
         this.wait = new WaitUtils(driver, 10);
     }

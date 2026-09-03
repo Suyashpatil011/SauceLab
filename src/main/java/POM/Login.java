@@ -11,23 +11,32 @@ public class Login {
     public WebDriver driver;
     private WaitUtils waitUtils;
 
-    public Login(WebDriver driver) {
+    public Login(WebDriver driver, WaitUtils waitUtils) {
         this.driver = driver;
-        this.waitUtils = new WaitUtils(driver, 10); // 10 sec timeout
+        this.waitUtils = waitUtils; // 10 sec timeout
     }
 
     private By userName = By.xpath("//input[@data-qa='login-email']");
-    private By passfiled = By.xpath("//input[@data-qa='login-password']");
+    private By passField = By.xpath("//input[@data-qa='login-password']");
     private By loginbtn =   By.xpath("//button[@data-qa='login-button']");
     private By errormsg = By.xpath("//p[@style='color: red;']");
 
 
     public void enterEmail(String email) {
-        driver.findElement(userName).sendKeys(email);
+        waitUtils.waitForVisibility(userName);
+        WebElement emailField = driver.findElement(userName);
+        emailField.clear();                     // ✅ clear old text
+        waitUtils.waitForClickable(userName);   // ✅ ensure ready
+        emailField.sendKeys(email);
     }
+
     public void enterPassword(String password) {
-        driver.findElement(passfiled).sendKeys(password);
+        waitUtils.waitForVisibility(passField);
+        WebElement passwordField = driver.findElement(passField);
+        passwordField.clear();
+        passwordField.sendKeys(password);
     }
+
 
     public void clickLogin() {
         driver.findElement(loginbtn).click();
